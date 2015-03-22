@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1159EB0C-7E24-4974-B3DD-CE7E60207296}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LudumEngine</RootNamespace>
+    <AssemblyName>LudumEngine</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ReleaseVersion>0.2</ReleaseVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <Compile Include="Internal\ComponentCollection.cs" />
+    <Compile Include="Extensions\DeepCopy.cs" />
+    <Compile Include="Properties\assemblyinfo.cs" />
+    <Compile Include="Public\Component.cs" />
+    <Compile Include="Public\Components\Collisionable.cs" />
+    <Compile Include="Public\Components\Music.cs" />
+    <Compile Include="Public\Components\Body.cs" />
+    <Compile Include="Public\Components\Sound.cs" />
+    <Compile Include="Public\Components\Sprite.cs" />
+    <Compile Include="Public\Entity.cs" />
+    <Compile Include="Public\EntityBlueprint.cs" />
+    <Compile Include="Public\Event.cs" />
+    <Compile Include="Public\Ludum.cs" />
+    <Compile Include="Public\Managers\AudioManager.cs" />
+    <Compile Include="Public\Managers\BlueprintManager.cs" />
+    <Compile Include="Public\Managers\ErrorHandler.cs" />
+    <Compile Include="Public\Managers\GameManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Public\Managers\InputHandler.cs" />
+    <Compile Include="Public\Managers\RenderManager.cs" />
+    <Compile Include="Public\Managers\ResourceManager.cs" />
+    <Compile Include="Public\Managers\SceneManager.cs" />
+    <Compile Include="Public\Managers\SettingsManager.cs" />
+    <Compile Include="Public\Scene.cs" />
+    <Compile Include="Public\Resources\Color.cs" />
+    <Compile Include="Public\Managers\PhysicsManager.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Packages\Lidgren.Network.dll" />
+    <None Include="Packages\MonoGame.Framework.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="MonoGame.Framework">
+      <HintPath>Packages\MonoGame.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Lidgren.Network">
+      <HintPath>Packages\Lidgren.Network.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Public\Resources\" />
+  </ItemGroup>
+</Project>

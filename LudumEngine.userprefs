@@ -1,0 +1,17 @@
+﻿<Properties MonoDevelop.MonoMac.LastXamMacNagTime="2015-03-22 10:38:55" GitUserInfo="UsingGIT" StartupItem="BelieveInKong/BelieveInKong-mac.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="BelieveInKong/GameComponents/Moveable.cs">
+    <Files>
+      <File FileName="BelieveInKong/Main.cs" Line="1" Column="1" />
+      <File FileName="BelieveInKong/Game.cs" Line="66" Column="30" />
+      <File FileName="BelieveInKong/GameComponents/Moveable.cs" Line="32" Column="72" />
+      <File FileName="BelieveInKong/GameComponents/FollowMouse.cs" Line="1" Column="1" />
+      <File FileName="BelieveInKong/GameComponents/HealAbility.cs" Line="1" Column="1" />
+      <File FileName="BelieveInKong/GameComponents/Health.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

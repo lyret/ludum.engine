@@ -1,0 +1,6 @@
+General Error: Failed to load the texture named 'apeSprite'.
+Program ExceptionArgument cannot be null.
+Parameter name: Graphics Device Cannot Be Null
+General Error: Failed to load the sound named ''.
+Program ExceptionArgument cannot be null.
+Parameter name: key
